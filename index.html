@@ -15,6 +15,42 @@
 						Панель управления сайтом
 					</p>
 				</a>
+				<div class="admin-menu__box">
+					<ul class="admin-menu__box-list">
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--main">
+									<p>Главная страница</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="customer.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menus">
+									<p>Меню</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="stock.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--stocks">
+									<p>Акции</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="manager.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menager">
+									<p>Менеджеры</p>
+								</div>
+							</a></li>
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								
+							</a>
+						</li>
+					</ul>
+				</div>
 			</sidebar>
 			<div class="container__inner">
 				<header class="header__user">
@@ -43,13 +79,13 @@
 										Акция на первом экране
 									</h2>
 									<label>
-										<input class="form__input" type="text" name="text">
+										<input class="form__input" type="text" name="text" placeholder="Только до 5 июня Роял-кебаб от шеф-повара...">
 									</label>
 									<h2 class="form__text">
 										Подзаголовок
 									</h2>
 									<label>
-										<input class="form__input" type="text" name="text">
+										<input class="form__input" type="text" name="text" placeholder="При заказе от трех блюд.">
 									</label>
 								</div>
 								<div class="form__header-item form__header-item--contact ">
@@ -57,13 +93,13 @@
 										Контакты
 									</h2>
 									<label>
-										<input class="form__input form__input--contact" type="text" name="text">
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="Адрес: Москва, ул. Пушкина, дом 57">
 									</label>
 									<label>
-										<input class="form__input form__input--contact" type="text" name="text">
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="Телефон: 8 800 555-35-35">
 									</label>
 									<label>
-										<input class="form__input form__input--contact" type="text" name="text">
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="E-mail: info@restaurant.ru">
 									</label>
 								</div>
 							</div>
@@ -72,7 +108,9 @@
 									<h2 class="form__text">
 										О ресторане
 									</h2>
-									<textarea class="form__about-textarea" name="about"></textarea>
+									<textarea class="form__about-textarea" name="about">
+										Текст описания
+									</textarea>
 								</div>
 								<div class="form__middle-item form__middle-item--advantage">
 									<h2 class="form__text">
@@ -80,16 +118,24 @@
 									</h2>
 									<ul class="form__middle-list">
 										<li class="form__middle-item">
-											<label>
-												<input class="form__input form__input--advantage" type="text" name="text">
-											</label>
-											<textarea class="form__textarea-advantage" name="" id="" cols="30" rows="10"></textarea>
+											<div class="form__middle-box">
+												<label>
+													<input class="form__input form__input--advantage" type="text" name="text" placeholder="Свежие продукты">
+												</label>
+												<textarea class="form__textarea-advantage" name="" id="" cols="30" rows="10">
+													Текст описания
+												</textarea>
+											</div>
 										</li>
 										<li class="form__middle-item">
-											<label>
-												<input class="form__input form__input--advantage" type="text" name="text">
-											</label>
-											<textarea class="form__textarea-advantage" name="" id="" cols="30" rows="10"></textarea>
+											<div class="form__middle-box">
+												<label>
+													<input class="form__input form__input--advantage" type="text" name="text" placeholder="Свежие продукты">
+												</label>
+												<textarea class="form__textarea-advantage" name="" id="" cols="30" rows="10">
+													Текст описания
+												</textarea>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -101,8 +147,8 @@
 											<div class="form__footer-picture">
 												<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
 											</div>
-											<input class="form__footer-input" type="text" name="name">
-											<textarea class="form__footer-textarea" name="name"></textarea>
+											<input class="form__footer-input" type="text" name="name" placeholder="Марк Поперечный">
+											<textarea class="form__footer-textarea" name="name">Текст отзыва</textarea>
 										</div>
 									</li>
 									<li class="form__footer-item">
@@ -110,8 +156,8 @@
 											<div class="form__footer-picture">
 												<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
 											</div>
-											<input class="form__footer-input" type="text" name="name">
-											<textarea class="form__footer-textarea" name="name"></textarea>
+											<input class="form__footer-input" type="text" name="name" placeholder="Имя Фамилия">
+											<textarea class="form__footer-textarea" name="name">Текст отзыва</textarea>
 										</div>
 									</li>
 									<li class="form__footer-item">
@@ -119,8 +165,8 @@
 											<div class="form__footer-picture">
 												<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
 											</div>
-											<input class="form__footer-input" type="text" name="name">
-											<textarea class="form__footer-textarea" name="name"></textarea>
+											<input class="form__footer-input" type="text" name="name" placeholder="Имя Фамилия">
+											<textarea class="form__footer-textarea" name="name">Текст отзыва</textarea>
 										</div>
 									</li>
 								</ul>

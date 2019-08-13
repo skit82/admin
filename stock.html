@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Акции</title>
+</head>
+<body>
+	<div class="container">
+		<div class="container__wrapper">
+			<sidebar class="admin-menu">
+				<a href="index.html" class="logo">
+					<img src="img/logo-panel.png" width="173" height="75" alt="Логотип" class="logo__img">
+					<p>
+						Панель управления сайтом
+					</p>
+				</a>
+				<div class="admin-menu__box">
+					<ul class="admin-menu__box-list">
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--main">
+									<p>Главная страница</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menus">
+									<p>Меню</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="stock.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--stocks">
+									<p>Акции</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="manager.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menager">
+									<p>Менеджеры</p>
+								</div>
+							</a></li>
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								
+							</a>
+						</li>
+					</ul>
+				</div>
+			</sidebar>
+			<div class="container__inner">
+				<header class="header__user">
+					<ul class="header__user--list">
+						<li class="header__user--item">
+							<a href="" class="header__user--admin">
+								Вы вошли как Администратор
+							</a>
+						</li>
+						<li class="header__user--item">
+							<a href="" class="header__user--exit">
+								Выход
+							</a>
+						</li>
+					</ul>
+				</header>
+				<main>
+					<form action="" class="form-main form-main--stock">
+						<div class="form__wrapper">
+							<button type="sabmit" class="form__btn">
+								Сохранить
+							</button>
+							<div class="stock__wrapper">
+								<div class="stock__caption">
+									<h2 class="stock__caption-title">
+										Акции
+									</h2>
+									<a href class="stock__caption-link">
+										Добавить акцию
+									</a>
+								</div>
+								<div class="stock__block">
+									 <div class="stock__name">
+							        <div class="stock__list">
+							          <div class="stock__list-item stock__list-item--name">
+							            <a>Название</a>
+							          </div>
+							          <div class="stock__list-item stock__list-item--data">
+							            <a>Время проведения</a>
+							          </div>
+							          <div class="stock__list-item stock__list-item--contact">
+							            <a>Статус</a>
+							          </div>
+							          <div class="stock__list-item stock__list-item--edit">
+							          </div>
+							        </div>
+        							<div class="stock__box manager__box--odd">
+							          <div class="stock__named">
+							            <a>
+							            	До 14 июля Роял-кебаб  от шеф-повара в подарок!
+							          	</a>
+							          </div>
+							          <div class="stock__date">
+							            с 1 по 14 июля       
+							          </div>
+							          <div class="stock__tel">
+							            <a>Активна</a>     
+							          </div>
+							          <div class="stock__redact">
+							            <a href="">Редактировать</a>
+							          </div>
+        							</div>
+        							<div class="stock__box manager__box--odd">
+							          <div class="stock__named">
+							            <a>До 14 июля Роял-кебаб  от шеф-повара в подарок!</a>
+							          </div>
+							          <div class="stock__date">
+							            с 1 по 14 июля       
+							          </div>
+							          <div class="stock__tel">
+							            <a>Активна</a>      
+							          </div>
+							          <div class="stock__redact">
+							            <a href="">Редактировать</a>
+							          </div>
+        							</div>
+        							<div class="stock__box manager__box--odd">
+							          <div class="stock__named">
+							            <a>До 14 июля Роял-кебаб  от шеф-повара в подарок!</a>
+							          </div>
+							          <div class="stock__date">
+							            с 1 по 14 июля       
+							          </div>
+							          <div class="stock__tel">
+							            <a>Активна</a>      
+							          </div>
+							          <div class="stock__redact">
+							            <a href="">Редактировать</a>
+							          </div>
+        							</div>
+        						</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</main>
+				<div class="popup-fade">
+    			<div class="popup-stock">
+        		<a class="popup-close" href="#">
+        			<img src="img/icon-clouse.png" width="13" height="13" alt="Закрыть">
+        		</a>
+        		<form action="" class="form-stock">
+        			<h2 class="form-stock__title">
+        				Добавить/редактировать акцию
+        			</h2>
+        			<div class="form-stock__wrapper">
+        				<div class="form-stock__picture">
+        					<img src="img/stock-foto.png" width="283" height="146" alt="Картинка">
+        				</div>
+        				<div class="form-stock__descr">
+		        			<label>
+		        				<input class="form-stock__input" type="text" name="name" placeholder="Скидка 30% на все меню в честь н..">
+		        			</label>
+		        			<div class="form-stock__box">
+			        			<label>
+			        				<input class="form-stock__input-data" type="text" name="date" placeholder="От: 5 июля">
+			        			</label>
+			        			<label>
+			        				<input class="form-stock__input-data" type="text" name="data" placeholder="До: 10 июля">
+			        			</label>
+			        		</div>
+			        		<div class="form-stock__select form-stock__select--icon">
+			        			<select name="select">
+			        				<option selected="selected">Активна</option>
+											<option>Первый</option>
+											<option>Второй</option>
+											<option>Третий</option>
+											<option>Четвертый</option>
+		        			</select>
+									</div>
+		        		</div>
+		        	</div>
+	        			<label>
+	        				<textarea class="form-stock__textarea" name="name" ></textarea>
+	        			</label>
+	        			<a href="" class="form-stock__link">
+	        				Сохранить
+	        			</a>
+	        			<div class="form-stock__inner">
+	        				<button class="form-stock__cancel">
+	        					Отменить
+	        				</button>
+	        				<button class="form-stock__remove">
+	        					Удалить
+	        				</button>
+	        			</div>
+        		</form>
+    		</div>        
+			</div>
+			</div>
+		</div>
+	</div>
+	<script  src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
