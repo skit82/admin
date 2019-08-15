@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.manager__caption-link, .stock__caption-link, .food__caption-link, .custumer__filter-link, .manager__redact-link').click(function() {
+  $('.manager__caption-link, .stock__caption-link, .food__caption-link, .manager__redact-link, .food__redact, .stock__redact-link ').click(function() {
         $('.popup-fade').fadeIn();
         return false;
     });    
