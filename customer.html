@@ -86,6 +86,35 @@
 								</div>
 								<div class="custumer__block">
 									 <div class="custumer__name">
+									 		<div class="custumer__filter">
+							          <div class="custumer__filter-item custumer__filter-item--number">
+							            <a>Номер заказа</a>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--data">
+							            <a>Время подачи</a>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--summ">
+							            <a>Сумма заказа</a>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--stata">
+							            <div class="custumer__orders-select">
+														<select name="select">
+							        				<option selected="selected">
+							        					Статус заказа
+							        				</option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+						        				</select>
+													</div>
+							          </div>
+							          <div class="custumer__filter-item custumer__filter-item--btn">
+							          	<a href="" class="custumer__filter-link">
+							          		Сортировать
+							          	</a>
+							          </div>
+							        </div>
 							        <div class="custumer__list">
 							          <div class="custumer__list-item custumer__list-item--number">
 							            <a>Номер заказа</a>
@@ -164,8 +193,48 @@
 						</div>
 					</form>
 				</main>
+				<div class="popup-fade">
+    			<div class="popup">
+        		<a class="popup-close" href="#">
+        			<img src="img/icon-clouse.png" width="13" height="13" alt="Закрыть">
+        		</a>
+        		<form action="" class="form-redact">
+        			<h2 class="form-redact__title">
+        				Добавить/редактировать  менеджера
+        			</h2>
+        			<label>
+        				<input class="form-redact__input" type="text" name="name" placeholder="Фамилия Имя Отчество">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер телефона">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="email" name="email" placeholder="E-mail">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Пароль">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Повторите пароль">
+        			</label>
+        			<a href="" class="form-redact__link">
+        				Сохранить
+        			</a>
+        			<div class="form-redact__inner">
+        				<button class="form-redact__cancel">
+        					Отменить
+        				</button>
+        				<button class="form-redact__remove">
+        					Удалить
+        				</button>
+        			</div>
+        		</form>
+    		</div>        
+			</div>
 			</div>
 		</div>
 	</div>
+	<script  src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
