@@ -1427,8 +1427,22 @@ body {
 .popup-fade {
     display: none;
 }
+.rubric-fade {
+	display: none;
+}
 .popup-fade:before {
   content: '';
+  background: #000;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+.rubric-fade:before {
+	content: '';
   background: #000;
   position: fixed; 
   left: 0;
@@ -1452,6 +1466,19 @@ body {
   opacity: 1;    
 }
 .popup-dish {
+	position: fixed;
+  top: 10%;
+  left: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 360px;
+  margin-left: -150px;    
+  background: #fff;
+  border-radius: 10px; 
+  z-index: 99999;
+  opacity: 1;
+}
+.popup-rubric {
 	position: fixed;
   top: 10%;
   left: 50%;
@@ -1609,9 +1636,38 @@ input[placeholder] {
 	color: #1c1c1c;
 	text-align: center;
 }
+.form-rubric__title {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 30px;
+	color: #1c1c1c;
+	text-align: center;
+}
 .form-redact__link,
 .form-stock__link,
 .form-dish__link {
+	display: block;
+  width: 177px;
+  height: 47px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 47px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  text-decoration: none;
+  background-image: -moz-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  background-image: -webkit-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  background-image: -ms-linear-gradient( 140deg, rgb(198,31,31) 0%, rgb(235,51,51) 100%);
+  box-shadow: 0px 16px 26px 0px rgba(235, 51, 51, 0.26);
+}
+.form-rubric__link {
 	display: block;
   width: 177px;
   height: 47px;
@@ -1651,6 +1707,16 @@ input[placeholder] {
 	justify-content: space-between;
 	margin: 0 auto;
 }
+.form-rubric__inner {
+	width: 283px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
 .form-redact__cancel,
 .form-redact__remove,
 .form-stock__cancel,
@@ -1677,6 +1743,18 @@ input[placeholder] {
 	border: none;
 	background-color: #fff;
 }
+.form-rubric__cancel,
+.form-rubric__remove {
+	padding: 0px;
+	margin: 0px;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 800;
+	color: #1c1c1c;
+	line-height: 30px;
+	border: none;
+	background-color: #fff;
+}
 .form-stock__picture img {
 	width: 283px;
 	height: 146px;
@@ -1686,7 +1764,12 @@ input[placeholder] {
 	width: 283px;
 	height: 141px;
 	border-radius: 10px;
-
+}
+.form-rubric__picture img {
+	width: 283px;
+	height: 141px;
+	margin-bottom: 20px;
+	border-radius: 10px;
 }
 .form-stock__wrapper {
 	width: 580px;
@@ -1713,7 +1796,23 @@ input[placeholder] {
 	-o-flex-direction: column;
 	flex-direction: column;
 	margin: 0 auto;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
+}
+.form-rubric__wrapper {
+	position: relative;
+	width: 283px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-bottom: 10px;
 }
 .form-stock__box {
 	display: -webkit-flex;
@@ -1863,6 +1962,36 @@ input[placeholder] {
 	content: "";
 	right: 55px;
   top: 485px;
+  width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png);
+}
+.form-rubric__select select {
+	position: relative;
+  display: block;
+  width: 283px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-left: 20px;
+  background: none; 
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c1c1c;
+  outline: none;
+}
+.form-rubric__select:after {
+	position: absolute;
+	content: "";
+	right: 17px;
+  top: 183px;
   width: 11px;
 	height: 7px;
 	border-color: #000 transparent transparent transparent;
