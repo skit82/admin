@@ -299,13 +299,15 @@ body {
 .form__middle-area {
 	width: 436px;
 	height: 382px;
-	padding-left: 20px;
+	padding: 20px;
   margin-left: 30px;
   resize:none;
   border: 0px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  font-size: 16px;
   border-radius: 5px;
   /*opacity: 0.1;*/
 }
@@ -330,6 +332,7 @@ body {
 }
 .form__middle-picture img {
 	display: block;
+	width: 68%;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -345,7 +348,7 @@ body {
 .form__middle-textarea {
 	width: 236px;
   height: 119px;
-  padding-left: 20px;
+  padding: 10px 20px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 300;
@@ -1274,7 +1277,8 @@ body {
 	width: 170px;
 }
 .custumer__filter-item--data {
-	width: 170px;
+	/*width: 170px;*/
+	width: 200px;
 	border-right: 1px solid rgba(27, 25, 36, 0.1);
 	padding-left: 12px;
 }
@@ -1284,11 +1288,12 @@ body {
 }
 .custumer__filter-item--number {
 	padding-left: 12px;
-	width: 170px;
+	width: 200px;
 	border-right: 1px solid rgba(27, 25, 36, 0.1)
 }
 .custumer__filter-item--btn {
-	width: 148px;
+	/*width: 148px;*/
+	width: 203px;
 }
 .custumer__list-item--data {
 	width: 148px;
@@ -1308,9 +1313,18 @@ body {
 	width: 200px;
 }
 .custumer__filter-item {
+	display: block;
 	font-size: 16px;
 	font-weight: 300;
 	color: #1c1c1c;
+	text-decoration: none;
+}
+.custumer__filter-ref {
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	color: #1c1c1c;
+	text-decoration: none;
 }
 .custumer__filter-link {
 	display: block;
@@ -1454,7 +1468,7 @@ body {
 .custumer__filter-select:after {
 	position: absolute;
 	content: "";
-	right: 160px;
+	right: 230px;
   top: 30px;
 	width: 11px;
 	height: 7px;
@@ -1827,6 +1841,9 @@ input[placeholder] {
 	width: 75px;
 	height: 90px;
 }
+.dish__promo__block {
+	position: relative;
+}
 .form-dish__block .form__dish-modal {
 	opacity: 0;
   position: absolute;
@@ -1981,6 +1998,37 @@ input[placeholder] {
 	position: absolute;
 	top: 35%;
   left: 40%;
+}
+.dish__promo__block .dish__promo-modal {
+	opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.43);
+  z-index: 1;
+}
+.dish__promo__block:hover .dish__promo-modal {
+	opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dish__promo-modal-link {
+	position: absolute;
+	top: 45%;
+  left: 48%;
 }
 .form-rubric__picture img {
 	width: 283px;
@@ -2276,4 +2324,16 @@ input[placeholder] {
 	height: 7px;
 	background-image: url(../img/icon-arrow.png);
 	background-repeat: no-repeat;
+}
+.filter-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.custumer__filter-calendar {
+	margin-top: 6px;
+  margin-right: 6px;
 }

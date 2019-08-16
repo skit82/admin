@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<title>Заказы клиентов</title>
 </head>
 <body>
@@ -88,14 +89,21 @@
 									 <div class="custumer__name">
 									 		<div class="custumer__filter">
 							          <div class="custumer__filter-item custumer__filter-item--number">
-							            <a>Номер заказа</a>
+							          	<div class="filter-container">
+								            <a class="custumer__filter-ref" href="">
+								            	Номер заказа
+								          	</a>
+								            <div id="datepicker" class="custumer__filter-calendar">
+								            	<img src="img/small-calendar.svg" alt="">
+								            </div>
+								          </div>
 							          </div>
 							          <div class="custumer__filter-item custumer__filter-item--data">
-							            <a>Время подачи</a>
+							            <a class="custumer__filter-ref" href="">Время подачи</a>
 							          </div>
-							          <div class="custumer__filter-item custumer__filter-item--summ">
-							            <a>Сумма заказа</a>
-							          </div>
+							          <!-- <div class="custumer__filter-item custumer__filter-item--summ"> -->
+							            <!-- <a>Сумма заказа</a> -->
+							          <!-- </div> -->
 							          <div class="custumer__filter-item custumer__filter-item--stata">
 							            <div class="custumer__filter-select">
 														<select name="select">
@@ -235,6 +243,7 @@
 		</div>
 	</div>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
