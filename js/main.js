@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
-    $( "#datepicker" ).datepicker();
-
-
-  $('.manager__caption-link, .stock__caption-link, .food__caption-link, .manager__redact-link, .food__redact, .stock__redact-link ').click(function() {
+    $('.manager__caption-link, .stock__caption-link, .food__caption-link, .manager__redact-link, .food__redact, .stock__redact-link ').click(function() {
         $('.popup-fade').fadeIn();
         return false;
     });    
@@ -53,5 +50,14 @@ $(document).ready(function() {
         if ($(e.target).closest('.popup-rubric').length == 0) {
             $(this).fadeOut();                    
         }
+    });
+
+    $("#datepicker").datepicker();
+    $('.calendar-img').click(function() {
+    $("#datepicker").focus();
+    });
+
+    $('.time-img').click(function() {
+    $("#timepicker").focus();
     });
 });

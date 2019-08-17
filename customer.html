@@ -93,13 +93,20 @@
 								            <a class="custumer__filter-ref" href="">
 								            	Номер заказа
 								          	</a>
-								            <div id="datepicker" class="custumer__filter-calendar">
-								            	<img src="img/small-calendar.svg" alt="">
+								            <div  class="custumer__filter-calendar ">
+								            	<label><img class="calendar-img"  src="img/small-calendar.svg" width="25" height="25" alt=""></label>
+								            	<input class="calendar-input" type="text" id="datepicker">
 								            </div>
 								          </div>
 							          </div>
 							          <div class="custumer__filter-item custumer__filter-item--data">
+							          	<div class="filter-container">
 							            <a class="custumer__filter-ref" href="">Время подачи</a>
+								             <div  class="custumer__filter-time">
+									            	<label><img class="time-img"  src="img/clock.svg" width="25" height="25" alt=""></label>
+									            	<input class="time-input" type="time" name="time" id="timepicker">
+									            </div>
+									          </div>
 							          </div>
 							          <!-- <div class="custumer__filter-item custumer__filter-item--summ"> -->
 							            <!-- <a>Сумма заказа</a> -->
@@ -244,6 +251,7 @@
 	</div>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
 	<script src="jquery/jquery-ui.min.js"></script>
+	<script src="js/datepicker-ru.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

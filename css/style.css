@@ -2334,6 +2334,32 @@ input[placeholder] {
 	justify-content: space-between;
 }
 .custumer__filter-calendar {
+	position: relative;
 	margin-top: 6px;
   margin-right: 6px;
+}
+.custumer__filter-time {
+	position: relative;
+	margin-top: 6px;
+  margin-right: 6px;
+}
+.calendar-input {
+	position: absolute;
+  width: 70px;
+  top: 38px;
+  right: 0px;
+  background-color: rgb(246, 248, 254);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);	
+}
+.time-input {
+	position: absolute;
+  width: 70px;
+  top: 38px;
+  right: 0px;
+  background-color: rgb(246, 248, 254);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);	
 }
