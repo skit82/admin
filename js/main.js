@@ -53,11 +53,27 @@ $(document).ready(function() {
     });
 
     $("#datepicker").datepicker();
-    $('.calendar-img').click(function() {
-    $("#datepicker").focus();
-    });
+    $("#datedopicker").datepicker();
+    // $('.calendar-img').click(function() {
+    // $("#datepicker").focus();
+    // });
 
     $('.time-img').click(function() {
     $("#timepicker").focus();
+    });
+    $('.time-img').click(function() {
+    $("#datepicker").focus();
+    });
+
+    $('.calendar-input').on('click', function(){
+     $('.data__text').css('display','block');
+    });
+
+    $('.calendar-input').on('click', function(){
+     $('.data__block').css('display','block');
+    });
+
+    $('.time-input').on('click', function(){
+     $('.time-text').css('display','block');
     });
 });
