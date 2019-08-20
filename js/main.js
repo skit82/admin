@@ -52,8 +52,18 @@ $(document).ready(function() {
         }
     });
 
-    $("#datepicker").datepicker();
-    $("#datedopicker").datepicker();
+    // $("#datepicker").datepicker({
+    // });
+
+    $(".datepickerTimeField").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1, changeFirstDay: false,
+        navigationAsDateFormat: false,
+        duration: 0,
+    });
+    // $("#datedopicker").datepicker();
     // $('.calendar-img').click(function() {
     // $("#datepicker").focus();
     // });
@@ -65,9 +75,17 @@ $(document).ready(function() {
     $("#datepicker").focus();
     });
 
-    $('.filter-img').on('click', function(){
-    $('.filter-container__wrraper').css('opacity','1');
-    });
+    // $('.filter-img').on('click', function(){
+    // $('.filter-container__wrraper').css('opacity','1');
+    // });
+
+    $('.filter-img').on('click', function() {
+        $('.filter-container__wrraper').slideToggle(100, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
 
     // $('.calendar-input').on('click', function(){
      // $('.data__text').css('display','block');
