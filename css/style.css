@@ -1454,6 +1454,7 @@ body {
   width: 170px;
   /*height: 65px;*/
   padding-left: 5px;
+  padding-top: 2px;
   border: none;
   /*border-style: solid;*/
   /*border-width: 1px;*/
@@ -1474,7 +1475,7 @@ body {
 	position: absolute;
 	content: "";
 	right: 230px;
-  top: 30px;
+  top: 33px;
 	width: 11px;
 	height: 7px;
 	border-color: #000 transparent transparent transparent;
@@ -2331,12 +2332,19 @@ input[placeholder] {
 	background-repeat: no-repeat;
 }
 .filter-container {
+	position: relative;
 	/*display: -webkit-flex;*/
 	/*display: -moz-flex;*/
 	/*display: -ms-flex;*/
 	/*display: -o-flex;*/
 	/*display: flex;*/
 	/*justify-content: space-between;*/
+}
+.filter-img {
+	position: absolute;
+  right: 70px;
+  top: 8px;
+  cursor: pointer;
 }
 .custumer__filter-calendar {
 	position: relative;
@@ -2412,4 +2420,7 @@ input[placeholder] {
 }
 .time-text {
 	display: none;
+}
+.filter-container__wrraper {
+	opacity: 0;
 }

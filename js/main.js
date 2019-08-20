@@ -65,6 +65,10 @@ $(document).ready(function() {
     $("#datepicker").focus();
     });
 
+    $('.filter-img').on('click', function(){
+     $('.filter-container__wrraper').css('opacity','1');
+    })
+
     $('.calendar-input').on('click', function(){
      $('.data__text').css('display','block');
     });
