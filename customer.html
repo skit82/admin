@@ -93,10 +93,6 @@
 								            <a class="custumer__filter-ref" href="">
 								            	Номер заказа
 								          	</a>
-								            <!-- <div  class="custumer__filter-calendar "> -->
-								            	<!-- <label><img class="calendar-img"  src="img/small-calendar.svg" width="25" height="25" alt=""></label> -->
-								            	<!-- <input class="calendar-input" type="text" id="datepicker"> -->
-								            <!-- </div> -->
 								          </div>
 							          </div>
 							          <div class="custumer__filter-item custumer__filter-item--data">
@@ -106,7 +102,6 @@
 							            	<div class="filter-container__wrraper">
 								            	<div class="filter-container__inner">
 								            		<div  class="custumer__filter-calendar ">
-									            	<!-- <label><img class="time-img"  src="img/small-calendar.svg" width="25" height="25" alt=""></label> -->
 									            	<label class="data__text">Дата от:</label>
 									            		<input class="calendar-input" type="datetime-local" id="datepicker">
 									            </div>
@@ -116,27 +111,9 @@
 									            	<input class="calendar-input" type="datetime-local" id="datedopicker">
 									            </div>
 								          	</div>
-								             <!-- <div  class="custumer__filter-time"> -->
-									            	<!-- <label><img class="time-img"  src="img/clock.svg" width="25" height="25" alt=""></label> -->
-									            	<!-- <label class="time-text"> -->
-									            		<!-- От -->
-									            	<!-- </label> -->
-									            	<!-- <input class="time-input" type="datetime-local" name="time" id="timepicker"> -->
-									            <!-- </div> -->
 									          </div>
 									        </div>
 							          </div>
-							          <!-- <div class="custumer__filter-item custumer__filter-item--summ"> -->
-							            <!-- <a>Время заказа</a> -->
-							            <!-- <div  class="custumer__filter-time"> -->
-									          <!-- <label><img class="time-img"  src="img/clock.svg" width="25" height="25" alt=""></label> -->
-									          <!-- <label class="time-text"> -->
-									            <!-- От -->
-									          <!-- </label> -->
-									          <!-- <input class="time-input" type="datetime-local" name="time" id="timepicker"> -->
-									          <!-- <p><input class="time-input datepickerTimeField" name="min" value="04.05.2010 01:05:15"></p> -->
-									        <!-- </div> -->
-							          <!-- </div> -->
 							          <div class="custumer__filter-item custumer__filter-item--stata">
 							            <div class="custumer__filter-select">
 														<select name="select">
@@ -233,6 +210,43 @@
 							</div>
 						</div>
 					</form>
+				</main>
+				<div class="popup-fade">
+    			<div class="popup">
+        		<a class="popup-close" href="#">
+        			<img src="img/icon-clouse.png" width="13" height="13" alt="Закрыть">
+        		</a>
+        		<form action="" class="form-redact">
+        			<h2 class="form-redact__title">
+        				Добавить/редактировать  менеджера
+        			</h2>
+        			<label>
+        				<input class="form-redact__input" type="text" name="name" placeholder="Фамилия Имя Отчество">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер телефона">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="email" name="email" placeholder="E-mail">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Пароль">
+        			</label>
+        			<label>
+        				<input class="form-redact__input" type="password" name="password" placeholder="Повторите пароль">
+        			</label>
+        			<a href="" class="form-redact__link">
+        				Сохранить
+        			</a>
+        			<div class="form-redact__inner">
+        				<button class="form-redact__cancel">
+        					Отменить
+        				</button>
+        				<button class="form-redact__remove">
+        					Удалить
+        				</button>
+        			</div>
+        		</form>
 				</main>
 				<div class="popup-fade">
     			<div class="popup">

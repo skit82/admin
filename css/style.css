@@ -1472,6 +1472,7 @@ body {
   color: #1c1c1c;
   outline: none;
   margin: 0px auto;
+  cursor: pointer;
 }
 .custumer__filter-select:after {
 	position: absolute;
@@ -2336,12 +2337,6 @@ input[placeholder] {
 }
 .filter-container {
 	position: relative;
-	/*display: -webkit-flex;*/
-	/*display: -moz-flex;*/
-	/*display: -ms-flex;*/
-	/*display: -o-flex;*/
-	/*display: flex;*/
-	/*justify-content: space-between;*/
 }
 .filter-img {
 	position: absolute;
@@ -2352,8 +2347,6 @@ input[placeholder] {
 .custumer__filter-calendar {
 	position: relative;
 	width: 70px;
-	/*margin-top: 6px;*/
-  /*margin-right: 6px;*/
   margin-right: 5px;
 }
 .custumer__filter-time {
@@ -2368,8 +2361,6 @@ input[placeholder] {
 .calendar-input {
 	position: absolute;
   width: 172px;
-  /*top: 38px;*/
-  /*top: 45px;*/
   top: 21px;
   left: 0px;
   background-color: rgb(246, 248, 254);
@@ -2416,15 +2407,6 @@ input[placeholder] {
 	justify-content: space-between;
 	width: 250px;
 }
-/*.data__text {*/
-	/*display: none;*/
-/*}*/
-/*.data__block {*/
-	/*display: none;*/
-/*}*/
-/*.time-text {*/
-	/*display: none;*/
-/*}*/
 .filter-container__wrraper {
 	display: none;
 }
