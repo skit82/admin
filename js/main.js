@@ -52,32 +52,12 @@ $(document).ready(function() {
         }
     });
 
-    // $("#datepicker").datepicker({
-    // });
-
-    $(".datepickerTimeField").datepicker({
-        changeMonth: true,
-        changeYear: true,
-        dateFormat: 'dd.mm.yy',
-        firstDay: 1, changeFirstDay: false,
-        navigationAsDateFormat: false,
-        duration: 0,
-    });
-    // $("#datedopicker").datepicker();
-    // $('.calendar-img').click(function() {
-    // $("#datepicker").focus();
-    // });
-
     $('.time-img').click(function() {
     $("#timepicker").focus();
     });
     $('.time-img').click(function() {
     $("#datepicker").focus();
     });
-
-    // $('.filter-img').on('click', function(){
-    // $('.filter-container__wrraper').css('opacity','1');
-    // });
 
     $('.filter-img').on('click', function() {
         $('.filter-container__wrraper').slideToggle(100, function(){
@@ -86,16 +66,4 @@ $(document).ready(function() {
           };
       });
     })
-
-    // $('.calendar-input').on('click', function(){
-     // $('.data__text').css('display','block');
-    // });
-
-    // $('.calendar-input').on('click', function(){
-     // $('.data__block').css('display','block');
-    // });
-
-    // $('.time-input').on('click', function(){
-     // $('.time-text').css('display','block');
-    // });
 });
