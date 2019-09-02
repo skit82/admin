@@ -479,9 +479,9 @@ body {
 .manager__wrapper {
 	border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);s
+  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);
   width: 869px;
-  height: 324px;
+  min-height: 324px;
 }
 .manager__list {
 	display: -webkit-flex;
@@ -508,6 +508,7 @@ body {
   text-decoration: none;
 }
 .manager__named a {
+	padding: 11px 0px;
   font-size: 16px;
   font-weight: 300;
   color: #1c1c1c;
@@ -553,6 +554,7 @@ body {
 .manager__date {
 	display: block;
 	width: 200px;
+	padding: 20px 0px;
 	font-size: 16px;
 	font-weight: 300;
 	text-align: left;
@@ -561,6 +563,7 @@ body {
 .manager__tel {
 	display: block;
 	width: 200px;
+	padding: 11px 0px;
 	font-size: 16px;
 	font-weight: 300;
 	text-align: left;
@@ -573,6 +576,7 @@ body {
 .manager__redact {
 	display: block;
 	width: 150px;
+	padding: 15px 0px;
 	font-size: 14px;
 	line-height: 30px;
 	text-align: center;
@@ -617,9 +621,9 @@ body {
 .stock__wrapper {
 	border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);s
+  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);
   width: 869px;
-  height: 324px;
+  min-height: 324px;
 }
 .stock__list {
 	display: -webkit-flex;
@@ -681,6 +685,7 @@ body {
 	display: -o-flex;
 	display: flex;
 	align-items: center;
+	padding: 10px 0px;
 	min-height: 60px;
 }
 .stock__named {
@@ -1088,7 +1093,7 @@ body {
 	width: 145px;
 }
 .food__list-item--edit {
-	width: 160px;
+	width: 170px;
 }
 .food__named a {
   font-size: 16px;
@@ -1117,6 +1122,7 @@ body {
 	display: -o-flex;
 	display: flex;
 	align-items: center;
+	padding: 10px 0px;
 	min-height: 40px;
 }
 .food__named {
@@ -1420,7 +1426,7 @@ body {
 	position: relative;
   display: block;
   width: 190px;
-  height: 65px;
+  min-height: 65px;
   padding-left: 5px;
   border: none;
   /*border-style: solid;*/
@@ -2144,6 +2150,19 @@ input[placeholder] {
   background-color: rgb(255, 255, 255);
   width: 580px;
   height: 115px;
+}
+.form-stock__cont {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.form-stock__input--share {
+	display: block;
+	width: 580px;
+	margin: 0px auto;
+	margin-bottom: 5px;
 }
 .form-dish__textarea {
 	display: block;

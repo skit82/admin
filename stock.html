@@ -194,9 +194,32 @@
 		        				<input class="form-stock__input" type="text" name="name" placeholder="Скидка 30% на все меню в честь н..">
 		        			</label>
 		        			<div class="form-stock__box">
-			        			<label>
-			        				<input class="form-stock__input-data" type="text" name="date" placeholder="От: 5 июля">
-			        			</label>
+		        				<div class="form-stock__cont">
+		        					<div class="form-stock__text">
+		        						От
+		        					</div>
+			        				<div class="form-stock__data form-stock__data--icon">
+					        			<select name="select">
+					        				<option selected="selected">ДД</option>
+													<option>01</option>
+													<option>02</option>
+													<option>03</option>
+													<option>04</option>
+				        				</select>
+											</div>
+											<div class="form-stock__mouth form-stock__mouth--icon">
+					        			<select name="select">
+					        				<option selected="selected">ММ</option>
+													<option>Июнь</option>
+													<option>Июль</option>
+													<option>Август</option>
+													<option>Сентябрь</option>
+				        				</select>
+											</div>
+										</div>
+			        			<!-- <label> -->
+			        				<!-- <input class="form-stock__input-data" type="text" name="date" placeholder="От: 5 июля"> -->
+			        			<!-- </label> -->
 			        			<label>
 			        				<input class="form-stock__input-data" type="text" name="data" placeholder="До: 10 июля">
 			        			</label>
@@ -212,6 +235,9 @@
 									</div>
 		        		</div>
 		        	</div>
+		        		<label>
+		        				<input class="form-stock__input form-stock__input--share" type="text" name="name" placeholder="Акция распространяется на все напитки.">
+		        		</label>
 	        			<label>
 	        				<textarea class="form-stock__textarea" name="name" ></textarea>
 	        			</label>
