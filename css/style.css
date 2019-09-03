@@ -794,16 +794,16 @@ body {
 	padding-left: 12px;
 }
 .reservation__list-item--number {
-	width: 185px;
+	width: 140px;
 }
 .reservation__list-item--data {
-	width: 190px;
+	width: 180px;
 }
 .reservation__list-item--price {
-	width: 190px;
+	width: 165px;
 }
 .reservation__list-item--status {
-	width: 160px;
+	width: 190px;
 }
 .reservation__named p {
   font-size: 16px;
@@ -825,6 +825,7 @@ body {
 	align-items: center;
 }
 .reservation__box {
+	position: relative;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -841,7 +842,7 @@ body {
 }
 .reservation__numbed {
 	display: block;
-	width: 160px;
+	width: 129px;
 }
 .reservation__numbed p {
 	font-size: 16px;
@@ -851,7 +852,7 @@ body {
 }
 .reservation__date {
 	display: block;
-	width: 175px;
+	width: 170px;
 	font-size: 16px;
 	font-weight: 800;
 	text-align: left;
@@ -859,14 +860,14 @@ body {
 }
 .reservation__count p {
 	display: block;
-	width: 157px;
+	width: 140px;
 	font-size: 16px;
 	font-weight: 800;
 	color: #c61f1f;
 }
 .reservation__orders {
 	display: block;
-	width: 145px;
+	width: 185px;
 	font-size: 14px;
 	font-weight: 300;
 	color: #40af2d;
@@ -1330,6 +1331,7 @@ body {
 	width: 200px;
 }
 .custumer__filter-item {
+	position: relative;
 	display: block;
 	font-size: 16px;
 	font-weight: 300;
@@ -1464,6 +1466,40 @@ body {
   pointer-events: none;
 	background-image: url(../img/icon_select-stock.png) 
 }
+.reservation__orders-select select {
+	position: relative;
+  display: block;
+  width: 190px;
+  min-height: 65px;
+  padding-left: 5px;
+  border: none;
+  /*border-style: solid;*/
+  /*border-width: 1px;*/
+  /*border-color: rgba(0, 0, 0, 0.1);*/
+  /*border-radius: 5px;*/
+  background-color: rgb(255, 255, 255);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 14px;
+	font-weight: 300;
+	color: #40af2d;
+  outline: none;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.reservation__orders-select:after {
+	position: absolute;
+	content: "";
+	right: 5px;
+  top: 58px;
+	width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png) 
+}
 .custumer__filter-select select {
 	position: relative;
   display: block;
@@ -1493,8 +1529,8 @@ body {
 	position: absolute;
 	content: "";
 	/*right: 230px;*/
-	right: 12px;
-  bottom: 28px;
+	right: 15px;
+  top: 31px;
 	width: 11px;
 	height: 7px;
 	border-color: #000 transparent transparent transparent;
