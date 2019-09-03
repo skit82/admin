@@ -1298,6 +1298,7 @@ body {
 }
 .custumer__filter-item--number {
 	padding-left: 6px;
+	padding-top: 16px;
 	/*width: 200px;*/
 	width: 140px;
 	border-right: 1px solid rgba(27, 25, 36, 0.1)
@@ -1599,7 +1600,7 @@ body {
 }
 .form-stock__input {
 	display: block;
-	padding: 0px 20px;
+	padding: 5px 20px;
 	margin-bottom: 5px;
 	border-radius: 5px;
 	border-style: solid;
@@ -1610,7 +1611,23 @@ body {
   font-family: inherit;
   font-weight: 300;
   width: 288px;
-  height: 45px;
+  height: 33px;
+}
+.custumer__number__input {
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(246, 248, 254);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  width: 130px;
+  height: 33px;
+	outline: none;
 }
 .form-dish__input {
 	display: block;
@@ -1824,6 +1841,7 @@ input[placeholder] {
 	background-color: #fff;
 }
 .form-stock__picture img {
+	display: block;
 	width: 283px;
 	height: 146px;
 	border-radius: 10px;
@@ -2100,8 +2118,12 @@ input[placeholder] {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 5px;
 }
 .form-dish__box {
 	display: -webkit-flex;
@@ -2157,6 +2179,11 @@ input[placeholder] {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	width: 288px;
+	margin-bottom: 5px;
 }
 .form-stock__input--share {
 	display: block;
@@ -2209,7 +2236,7 @@ input[placeholder] {
 	position: relative;
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   padding-left: 20px;
   background: none; 
   border: 1px solid #ccc;
@@ -2222,12 +2249,97 @@ input[placeholder] {
   font-weight: 300;
   color: #1c1c1c;
   outline: none;
+  cursor: pointer;
+}
+.form-stock__data-one select,
+.form-stock__data-two select {
+	position: relative;
+  display: block;
+  width: 90px;
+  padding: 6px;
+  padding-left: 20px;
+  background: none; 
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c1c1c;
+  outline: none;
+  cursor: pointer;
+}
+.form-stock__data-one:after {
+	position: absolute;
+	content: "";
+	right: 202px;
+	top: 121px;
+	width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png) 
+}
+.form-stock__data-two:after {
+	position: absolute;
+	content: "";
+	right: 202px;
+	top: 159px;
+	width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png) 
+}
+.form-stock__mouth-one select,
+.form-stock__mouth-two select {
+	position: relative;
+  display: block;
+  width: 160px;
+  padding: 6px;
+  padding-left: 20px;
+  background: none; 
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  color: #1c1c1c;
+  outline: none;
+  cursor: pointer;
+}
+.form-stock__mouth-one:after {
+	position: absolute;
+	content: "";
+	right: 35px;
+	top: 121px;
+	width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png) 
+}
+.form-stock__mouth-two:after {
+	position: absolute;
+	content: "";
+	right: 35px;
+	top: 159px;
+	width: 11px;
+	height: 7px;
+	border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+	background-image: url(../img/icon_select-stock.png) 
 }
 .form-stock__select:after {
 	position: absolute;
 	content: "";
 	right: 35px;
-	top: 188px;
+	top: 197px;
 	width: 11px;
 	height: 7px;
 	border-color: #000 transparent transparent transparent;
