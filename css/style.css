@@ -1688,6 +1688,21 @@ body {
   width: 283px;
   height: 45px;
 }
+.form-rubric__input {
+	display: block;
+	padding: 0px 20px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  width: 283px;
+  height: 45px;
+}
 textarea::-webkit-input-placeholder {
 	font-size: 16px;
   color: #1c1c1c;
@@ -2584,4 +2599,121 @@ input[placeholder] {
 }
 .filter-container__wrraper {
 	display: none;
+}
+
+.admin-form {
+	width: 380px;
+	margin: 0 auto;
+}
+.admin-form__input {
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(46, 51, 71, 0.3);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 21px 0px rgba(1, 1, 1, 0.18);
+  width: 373px;
+  height: 62px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+}
+.admin-form__inner {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-form__picture {
+	display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+.admin__title {
+	padding: 0px;
+	padding-top: 95px;
+  margin: 0px;
+  margin-bottom: 35px;
+  font-size: 54px;
+  font-weight: 800;
+  text-align: center;
+}
+.admin-form__name {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 80px;
+	font-size: 23px;
+	font-weight: 300;
+	color: #1c1c1c;
+	text-align: center;
+}
+.admin-form__wrapper {
+	margin-bottom: 40px;
+}
+.admin-form__chechbox[type="checkbox"] {
+  display: none;
+}
+.admin-form__text {
+	display: block;
+	font-size: 16px;
+	font-weight: 300;
+	color: #1c1c1c;
+	text-align: center;
+}
+.admin-form__icon {
+  position: relative;
+}
+.admin-form__icon::before {
+  position: absolute;
+  content: "";
+  left: 98px;
+  top: -1px;
+  border-radius: 5px;
+  background-color: rgb(216, 220, 235);
+  width: 22px;
+  height: 23px;
+}
+.admin-form__icon::after {
+  display: none;
+  position: absolute;
+  content: "";
+  left: 104px;
+  top: 6px;
+  width: 10px;
+  height: 10px; 
+  background-image: url(../img/icon_chexbok.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+input:checked ~ .admin-form__icon::after {
+  display: block;
+}
+.admin-form__submit {
+	display: block;
+  width: 268px;
+  height: 65px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 65px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: #1c1c1c;
+}
+.admin-form__ref {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-weight: 800;
+	color: #1c1c1c;
+	text-align: center;
+	cursor: pointer;
 }

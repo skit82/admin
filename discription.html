@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Панель управления</title>
+</head>
+<body>
+	<div class="container">
+		<div class="container__wrapper">
+			<div class="admin-menu">
+				<a class="logo">
+					<img src="img/logo-panel.png" width="173" height="75" alt="Логотип" class="logo__img">
+					<p>
+						Панель управления сайтом
+					</p>
+				</a>
+				<div class="admin-menu__box">
+					<ul class="admin-menu__box-list">
+						<li class="admin-menu__box-item">
+							<a href="" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--main">
+									<p>Главная страница</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="dish.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menus">
+									<p>Меню</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="stock.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--stocks">
+									<p>Акции</p>
+								</div>
+							</a>
+						</li>
+						<li class="admin-menu__box-item">
+							<a href="manager.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--menager">
+									<p>Менеджеры</p>
+								</div>
+							</a></li>
+						<li class="admin-menu__box-item">
+							<a href="customer.html" class="admin-menu__box-link">
+								<div class="admin-menu__box-text admin-menu__box-text--order">
+									<p>Список заказов</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container__inner">
+				<header class="header__user">
+					<ul class="header__user--list">
+						<li class="header__user--item">
+							<a href="" class="header__user--admin">
+								Вы вошли как Администратор
+							</a>
+						</li>
+						<li class="header__user--item">
+							<a href="" class="header__user--exit">
+								Выход
+							</a>
+						</li>
+					</ul>
+				</header>
+				<main>
+					<form action="" class="form-main">
+						<div class="form__wrapper">
+							<button type="button" class="form__btn">
+								Сохранить
+							</button>
+							<div class="form__header">
+								<div class="form__header-item form__header-item--promo">
+									<h2 class="form__text">
+										Акция на первом экране
+									</h2>
+									<label>
+										<input class="form__input" type="text" name="text" placeholder="Только до 5 июня Роял-кебаб от шеф-повара...">
+									</label>
+									<h2 class="form__text">
+										Подзаголовок
+									</h2>
+									<label>
+										<input class="form__input" type="text" name="text" placeholder="При заказе от трех блюд.">
+									</label>
+								</div>
+								<div class="form__header-item form__header-item--contact ">
+									<h2 class="form__text">
+										Контакты
+									</h2>
+									<label>
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="Адрес: Москва, ул. Пушкина, дом 57">
+									</label>
+									<label>
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="Телефон: 8 800 555-35-35">
+									</label>
+									<label>
+										<input class="form__input form__input--contact" type="text" name="text" placeholder="E-mail: info@restaurant.ru">
+									</label>
+								</div>
+							</div>
+							<div class="form__middle">
+								<div class="form__middle-item form__middle-item--about">
+									<h2 class="form__text">
+										О ресторане
+									</h2>
+									<textarea class="form__middle-area" placeholder="Текст описания" name="about">
+									</textarea>
+								</div>
+								<div class="form__middle-item form__middle-item--advantage">
+									<h2 class="form__text">
+										Преимущества
+									</h2>
+									<ul class="form__middle-list">
+										<li class="form__middle-block">
+											<div class="form__middle-content">
+												<div class="form__middle-descr">
+													<div class="form__middle-picture">
+														<img src="img/icon-product1.png" width="51" height="46" alt="Продукт">
+													</div>
+													<div class="form__middle__modal">
+				        						<a href="" class="form__middle__modal-link">
+				        							<img src="img/icon-pencil.png" width="15" height="15" alt="Карандаш">
+				        						</a>
+        									</div>
+												</div>
+												<div class="form__middle-box">
+													<label>
+														<input class="form__input form__input--advantage" type="text" name="text" placeholder="Свежие продукты">
+													</label>
+													<textarea class="form__middle-textarea" placeholder="Текст описания">
+													</textarea>
+												</div>
+											</div>
+										</li>
+										<li class="form__middle-block">
+											<div class="form__middle-content">
+												<div class="form__middle-descr">
+													<div class="form__middle-picture">
+														<img src="img/icon-product1.png" width="51" height="46" alt="Продукт">
+													</div>
+													<div class="form__middle__modal">
+				        						<a href="" class="form__middle__modal-link">
+				        							<img src="img/icon-pencil.png" width="15" height="15" alt="Карандаш">
+				        						</a>
+        									</div>
+												</div>
+												<div class="form__middle-box">
+													<label>
+														<input class="form__input form__input--advantage" type="text" name="text" placeholder="Свежие продукты">
+													</label>
+													<label>
+														<textarea class="form__middle-textarea" name="name" placeholder="Текст описания">
+														</textarea>
+													</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form__footer">
+								<ul class="form__footer-list">
+									<li class="form__footer-item">
+										<div class="form__footer-inner">
+											<div class="form__footer__block">
+												<div class="form__footer-picture">
+													<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
+												</div>
+												<div class="form__footer__modal">
+			        						<a href="" class="form__footer__modal-link">
+			        							<img src="img/icon-pencil.png" width="15" height="15" alt="Карандаш">
+			        						</a>
+        								</div>
+											</div>
+											<input class="form__footer-input" type="text" name="name" placeholder="Марк Поперечный">
+											<textarea class="form__footer-textarea" placeholder="Текст отзыва"></textarea>
+										</div>
+									</li>
+									<li class="form__footer-item">
+										<div class="form__footer-inner">
+											<div class="form__footer__block">
+												<div class="form__footer-picture">
+													<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
+												</div>
+												<div class="form__footer__modal">
+			        						<a href="" class="form__footer__modal-link">
+			        							<img src="img/icon-pencil.png" width="15" height="15" alt="Карандаш">
+			        						</a>
+        								</div>
+											</div>
+											<input class="form__footer-input" type="text" name="name" placeholder="Имя Фамилия">
+											<textarea class="form__footer-textarea" name="name" placeholder="Текст отзыва"></textarea>
+										</div>
+									</li>
+									<li class="form__footer-item">
+										<div class="form__footer-inner">
+											<div class="form__footer__block">
+												<div class="form__footer-picture">
+													<img src="img/icon-commit.png" width="75" height="75" alt="Фото" class="form__footer-img">
+												</div>
+												<div class="form__footer__modal">
+			        						<a href="" class="form__footer__modal-link">
+			        							<img src="img/icon-pencil.png" width="15" height="15" alt="Карандаш">
+			        						</a>
+        								</div>
+											</div>
+											<input class="form__footer-input" type="text" name="name" placeholder="Имя Фамилия">
+											<textarea class="form__footer-textarea" name="name" placeholder="Текст отзыва"></textarea>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</main>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
