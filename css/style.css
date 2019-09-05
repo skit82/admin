@@ -58,6 +58,9 @@ body {
 .container {
 	width: 1300px;
 	margin: 0 auto;
+	/*background-color: rgb(243, 243, 243);*/
+}
+.container-main {
 	background-color: rgb(243, 243, 243);
 }
 .container__wrapper {
@@ -2614,7 +2617,7 @@ input[placeholder] {
   border-color: rgba(46, 51, 71, 0.3);
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 5px 21px 0px rgba(1, 1, 1, 0.18);
+  box-shadow: 0px 5px 21px 0px rgba(1, 1, 1, 0.1);
   width: 373px;
   height: 62px;
   font-size: 16px;
@@ -2716,4 +2719,10 @@ input:checked ~ .admin-form__icon::after {
 	color: #1c1c1c;
 	text-align: center;
 	cursor: pointer;
+}
+.current p {
+	color: red;
+}
+.container__inner--box {
+	margin: auto;
 }
