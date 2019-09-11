@@ -258,7 +258,7 @@ body {
 }
 .form__gallery {
 	width: 870px;
-  min-height: 400px;
+  min-height: 390px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -339,7 +339,11 @@ body {
   border-radius: 5px;
   background-color: rgb(247, 245, 245);
   width: 268px;
-  height: 147px;
+  height: 139px;
+}
+.form__gallery__picture img {
+	display: block;
+	border-radius: 3px;
 }
 .form__text {
 	padding: 0px;
@@ -2264,8 +2268,14 @@ input[placeholder] {
 	top: 45%;
   left: 48%;
 }
+.form-rubric__picture {
+	display: block;
+  max-width: 141px;
+  min-height: 141px;
+  margin: 0px auto;
+}
 .form-rubric__picture img {
-	width: 283px;
+	/*width: 283px;*/
 	height: 141px;
 	border-radius: 10px;
 }
