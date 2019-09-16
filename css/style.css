@@ -25,6 +25,7 @@ html {
 }
 
 img {
+	object-fit: cover;
   max-width: 100%;
   height: auto; 
 }
@@ -1996,7 +1997,7 @@ input[placeholder] {
 }
 .form-stock__picture img {
 	display: block;
-	width: 283px;
+	width: 146px;
 	height: 146px;
 	border-radius: 10px;
 }
