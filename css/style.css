@@ -19,6 +19,13 @@
 		  box-sizing: inherit;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 html {
   -webkit-box-sizing: border-box;
 		  box-sizing: border-box;
@@ -295,6 +302,118 @@ body {
 	margin-left: 20px;
 }
 .form__time-title {
+	padding: 0px;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #1c1c1c;
+}
+.form__foto {
+	width: 870px;
+  min-height: 80px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);
+}
+.form__foto-descr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+  margin: 0px 15px;
+  padding: 25px 0px;
+}
+.form__foto-input {
+	border: none;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+	margin-left: 20px;
+}
+.form__foto-file {
+	display: block;
+  width: 82px;
+  margin: 0px auto;
+  margin-left: 210px;
+  /*margin-bottom: 20px;*/
+  opacity: 1;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  color: #1c1c1c;
+  border-bottom: 1px solid #1c1a1b;
+  cursor: pointer;
+}
+.form__foto-title {
+	padding: 0px;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #1c1c1c;
+}
+.form__mode {
+	width: 870px;
+  min-height: 80px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 26px 0px rgba(19, 19, 20, 0.08);
+}
+.form__mode-descr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: flex-start;
+  margin: 0px 15px;
+  padding: 10px 0px;
+}
+.form__mode-input {
+	width: 115px;
+	padding: 0px 20px;
+	margin-left: 5px;
+	/*margin-right: 30px;*/
+}
+.form__mode-name {
+	padding: 0px;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+.form__mode-inner {
+	display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  width: 385px;
+}
+.form__mode-block {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.form__mode-text {
+	display: inline-block;
+	margin-top: 3px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #1c1c1c;
+}
+.form__mode-input:last-child {
+	margin-bottom: 0px;
+}
+.form__mode-title {
 	padding: 0px;
   margin: 0px;
   font-size: 24px;
